@@ -252,30 +252,17 @@ mrt_ceres:
     - mrt-ceres-dev
     xenial:
     - mrt-libceres-dev
-mrt_cgal:
+cgal:
   cmake:
-    trusty:
-      components: []
-      include_dirs:
-      - CGAL_INCLUDE_DIRS
-      libraries:
-      - CGAL_LIBRARY
-      library_dirs:
-      - CGAL_LIBRARIES_DIR
-      name: CGAL
-    xenial:
-      components: []
-      include_dirs:
-      - CGAL_INCLUDE_DIRS
-      libraries:
-      - CGAL_LIBRARY
-      library_dirs:
-      - CGAL_LIBRARIES_DIR
-      name: CGAL
+    components: []
+    include_dirs:
+    - CGAL_INCLUDE_DIRS
+    libraries:
+    - CGAL_LIBRARY
+    library_dirs:
+    - CGAL_LIBRARIES_DIR
+    name: MrtCGAL
   ubuntu:
-    trusty:
-    - libcgal-dev
-    xenial:
     - libcgal-dev
 mrt_ebus:
   cmake:
@@ -301,28 +288,16 @@ mrt_f2c_old:
   ubuntu:
     trusty:
     - mrt-ftwoc-dev
-mrt_gmp:
+gmp:
   cmake:
-    trusty:
-      components: []
-      include_dirs:
-      - GMP_INCLUDE_DIR
-      libraries:
-      - GMP_LIBRARIES
-      library_dirs: []
-      name: GMP
-    xenial:
-      components: []
-      include_dirs:
-      - GMP_INCLUDE_DIR
-      libraries:
-      - GMP_LIBRARIES
-      library_dirs: []
-      name: GMP
+    components: []
+    include_dirs:
+    - GMP_INCLUDE_DIR
+    libraries:
+    - GMP_LIBRARIES
+    library_dirs: []
+    name: GMP
   ubuntu:
-    trusty:
-    - libgmp-dev
-    xenial:
     - libgmp-dev
 mrt_leptonica:
   cmake:
